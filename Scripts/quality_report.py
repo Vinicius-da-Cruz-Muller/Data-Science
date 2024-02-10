@@ -16,5 +16,10 @@ def item1_1():
    print(dado)
 item1_1()
 
-# colunas = tabela.columns
+def item1_2():
+   dado = tabela.loc[tabela["Nome ponto de decisão"].isin(["Exec. Business Case"])& tabela["Dt.real in.pto.dec"].isnull()]
+   print(dado)
+
+item1_2()
+# colunas = tabela.columns 
 # print(colunas)
