@@ -14,6 +14,7 @@ def item1_1():
    #dado = tabela.loc[tabela["Nome ponto de decisão"].isin(["Execução", "Exec. Projeto"]) & tabela["Data real de início"].isnull()]
    dado = tabela.loc[tabela["Nome ponto de decisão"].isin(["Execução", "Exec. Projeto"]) & tabela["Data real de início"].isnull() | tabela["Dt.real in.pto.dec"].isnull()]
    print(dado)
+   
 item1_1()
 
 def item1_2():
